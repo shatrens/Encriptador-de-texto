@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="icon" href="C:\Users\njj\OneDrive\Escritorio\Encriptador\padlock_77987.ico">
+    </head>
+    <body>
+        <header>
+            <h1>ENCRIPTADOR DE TEXTO</h1>
+        </header>
+
+        <main>
+            <section class="contenedor">
+                <form>
+                    <label for="ingresarTexto">Por favor, ingrese el texto a convertir:</label>
+                    <input class="caja" type="text" name="inputTexto" id="inputTexto" placeholder="Escriba únicamente en minúscula, sin tildes ni carácteres especiales.">
+                    <input class="boton" value= "Encriptar" id="botonEnc" onclick="encriptador()">
+                    <input class="boton" value= "Desencriptar" id="botonDes" onclick="desencriptador()">
+                </form>
+            </section>
+
+            <section class="contenedor">
+                <label>Resultado:</label>            
+                <input class="caja" type= "text" id="resultado"></input>
+                <input class="boton" value="Copiar" onclick="copiarPortapapeles()">
+            </section>
+        </main>
+        <footer>
+                <div class="redes">
+                    <ul>
+                        <li class="icono"><a href="https://github.com/shatrens"><img src="C:\Users\njj\OneDrive\Escritorio\Encriptador\github-logo_icon-icons.com_73546.png"/></a></li>
+                        <li class="icono"><a href="https://www.linkedin.com/in/denisedamico98/"><img src="C:\Users\njj\OneDrive\Escritorio\Encriptador\linkedin_black_logo_icon_147114.png"/></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p><b>Proyecto realizado por Denise Damico para Oracle y Alura LATAM</b></p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
